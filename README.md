@@ -1,0 +1,2 @@
+# projectLytex
+MongoDB, NestJS, Angular
