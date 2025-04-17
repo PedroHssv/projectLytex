@@ -63,10 +63,10 @@ Este projeto utiliza um cluster remoto MongoDB. <br><br>
 
 Crie um arquivo .env na raiz project-lytax (NestJS) com o seguinte conteúdo: <br><br>
 
-MONGO_USER <br>
-MONGO_PASSWORD <br>
-MONGO_CLUSTER <br>
-MONGO_DB <br><br>
+MONGO_USER= <br>
+MONGO_PASSWORD= <br>
+MONGO_CLUSTER= <br>
+MONGO_DB= <br><br>
 
 As variaveis serão utilizadas para o uri: `mongodb+srv://${user}:${pass}@${cluster}/${db}?retryWrites=true&w=majority`;
 
