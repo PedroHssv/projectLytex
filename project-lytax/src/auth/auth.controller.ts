@@ -16,6 +16,7 @@ import {
   export class AuthController {
     constructor(private authService: AuthService) {}
   
+    @Public()
     @HttpCode(HttpStatus.OK)
     @Post('login')
     signIn(@Body() signInDto: Record<string, any>) {
