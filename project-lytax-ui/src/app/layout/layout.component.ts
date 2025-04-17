@@ -12,7 +12,7 @@ export class LayoutComponent {
   router = inject(Router);
 
   onLogoff(){
-    localStorage.removeItem("angular19User");
+    localStorage.removeItem("angular19Token");
     this.router.navigateByUrl("login");
   }
 }

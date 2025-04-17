@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Titles } from './titles';
 
@@ -7,9 +7,14 @@ import { Titles } from './titles';
 })
 export class TitlesService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   get() {
-    return this.http.get<Titles[]>("http://localhost:3000/titles");
+    const token = localStorage.getItem("angular19Token");
+    const headers = new HttpHeaders({
+      Authorization: `Bearer ${token}`,
+    });
+
+    return this.http.get<Titles[]>("http://localhost:3000/titles", { headers });
   }
 }

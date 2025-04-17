@@ -26,8 +26,8 @@ export class LoginComponent {
   http = inject(HttpClient);
 
   onLogin(){
-    this.http.post("url",this.apiLoginObj).subscribe((res:any) =>{
-      localStorage.setItem("angular19User",res.data.userId)
+    this.http.post("http://localhost:3000/auth/login",this.loginObj).subscribe((res:any) =>{
+      localStorage.setItem("angular19Token",res.access_token)
       this.router.navigateByUrl("allTitles");
     },error=>{
       alert("Credenciais Invalidas")
