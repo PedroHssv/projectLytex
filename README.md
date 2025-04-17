@@ -91,7 +91,7 @@ A aplicação estará disponível em: http://localhost:4200
 
 # Login
 
-Para logar utilizar <br><br>
+Para logar utilizar: <br>
 
 Username: admin <br>
 Password: admin <br>
