@@ -28,8 +28,8 @@ winget install Schniz.fnm
 fnm install 22
 
 ### Verifique as versões
-node -v  # Deve retornar v22.14.0
-npm -v   # Deve retornar 10.9.2
+node -v  # Deve retornar v22.14.0 <br>
+npm -v   # Deve retornar 10.9.2 <br>
 
 ## Para Linux
 ### Instale o FNM
@@ -39,32 +39,32 @@ curl -o- https://fnm.vercel.app/install | bash
 fnm install 22
 
 ### Verifique as versões
-node -v  # Deve retornar v22.14.0
-npm -v   # Deve retornar 10.9.2
+node -v  # Deve retornar v22.14.0 <br>
+npm -v   # Deve retornar 10.9.2 <br>
 
 ---
 
 ## Instalando Dependencias
 ### NestJS CLI
-npm install -g @nestjs/cli
-cd project-lytax
-npm install
+npm install -g @nestjs/cli <br>
+cd project-lytax <br> 
+npm install <br>
 
 ### Angular CLI
-npm install -g @angular/cli
-cd project-lytax-ui
-npm install
+npm install -g @angular/cli <br>
+cd project-lytax-ui <br>
+npm install <br>
 ---
 
 # Configuração do MongoDB
-Este projeto utiliza um cluster remoto MongoDB.
+Este projeto utiliza um cluster remoto MongoDB. <br><br>
 
-Crie um arquivo .env na raiz project-lytax (NestJS) com o seguinte conteúdo:
+Crie um arquivo .env na raiz project-lytax (NestJS) com o seguinte conteúdo: <br><br>
 
-MONGO_USER
-MONGO_PASSWORD
-MONGO_CLUSTER
-MONGO_DB
+MONGO_USER <br>
+MONGO_PASSWORD <br>
+MONGO_CLUSTER <br>
+MONGO_DB <br><br>
 
 As variaveis serão utilizadas para o uri: `mongodb+srv://${user}:${pass}@${cluster}/${db}?retryWrites=true&w=majority`;
 
@@ -73,15 +73,15 @@ As variaveis serão utilizadas para o uri: `mongodb+srv://${user}:${pass}@${clus
 # Rodar o projeto
 ### Backend (NestJS)
 
-cd project-lytax
-npm run start:dev
+cd project-lytax <br>
+npm run start:dev <br><br>
 
 A API estará disponível em: http://localhost:3000
 
 ### Frontend (Angular)
 
-cd project-lytax-ui
-ng serve
+cd project-lytax-ui <br>
+ng serve <br><br>
 
 A aplicação estará disponível em: http://localhost:4200
 
