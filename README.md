@@ -47,10 +47,13 @@ npm -v   # Deve retornar 10.9.2
 ## Instalando Dependencias
 ### NestJS CLI
 npm install -g @nestjs/cli
+cd project-lytax
+npm install
 
 ### Angular CLI
 npm install -g @angular/cli
-
+cd project-lytax-ui
+npm install
 ---
 
 # Configuração do MongoDB
