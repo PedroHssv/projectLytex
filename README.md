@@ -88,3 +88,10 @@ ng serve <br><br>
 A aplicação estará disponível em: http://localhost:4200
 
 ---
+
+# Login
+
+Para logar utilizar <br><br>
+
+Username: admin <br>
+Password: admin <br>
