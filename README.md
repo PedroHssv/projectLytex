@@ -119,3 +119,12 @@ Para logar: <br>
 
 Username: admin <br>
 Password: admin <br>
+
+---
+
+# Teste
+
+Para execucao dos Testes: <br><br>
+
+cd project-lytax <br>
+npm run test
