@@ -22,11 +22,11 @@ export class AddTitlesComponent implements OnInit {
   todayISO = new Date().toISOString().split('T')[0];
 
   titles: CreateOrUpdate = {
-    numero_titulo: '',
-    nosso_numero: '',
+    numero_titulo: '1',
+    nosso_numero: '1',
     data_emissao: new Date().toISOString(),
     data_vencimento: new Date().toISOString(),
-    valor_original: 0,
+    valor_original: 2799.00,
     valor_pago: null,
     data_pagamento: null,
     status: 'pendente',
@@ -40,15 +40,15 @@ export class AddTitlesComponent implements OnInit {
       banco: ''
     },
     sacado: {
-      nome: '',
-      cpf: '',
+      nome: 'Valerio de Aguiar Zorzato',
+      cpf: '96050176876',
       endereco: {
-        rua: '',
+        rua: 'Rua Doutor Moacir Byrro',
         numero: '',
-        bairro: '',
-        cidade: '',
-        uf: '',
-        cep: ''
+        bairro: 'Centro',
+        cidade: 'Coronel Fabriciano',
+        uf: 'MG',
+        cep: '35170128'
       }
     },
     juros_mensal_percentual: 0,

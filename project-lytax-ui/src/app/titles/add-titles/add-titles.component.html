@@ -1,7 +1,7 @@
 <div class="container mt-4">
     <legend>Criar Título</legend>
     <form>
-      <div class="mb-3">
+      <!-- <div class="mb-3">
         <label for="numeroTitulo" class="form-label">Número do Título</label>
         <input type="text" class="form-control" id="numeroTitulo" name="numero_titulo" [(ngModel)]="titles.numero_titulo" required>
       </div>
@@ -9,10 +9,10 @@
       <div class="mb-3">
         <label for="nossoNumero" class="form-label">Nosso Número</label>
         <input type="text" class="form-control" id="nossoNumero" name="nosso_numero" [(ngModel)]="titles.nosso_numero" required>
-      </div>
+      </div> -->
   
-      <div class="row">
-        <div class="col-md-6 mb-3">
+      <!-- <div class="row"> -->
+        <div class="mb-3">
           <label for="formaPagamento" class="form-label">Forma de Pagamento</label>
           <select id="formaPagamento" name="forma_pagamento" [(ngModel)]="titles.forma_pagamento" class="form-select" required>
             <option value="boleto">Boleto</option>
@@ -21,13 +21,13 @@
           </select>
         </div>
   
-        <div class="col-md-6 mb-3">
+        <!-- <div class="col-md-6 mb-3">
           <label for="dataVencimento" class="form-label">Data de Vencimento</label>
           <input type="date" class="form-control" id="dataVencimento" name="data_vencimento" [(ngModel)]="titles.data_vencimento" required>
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
   
-      <div class="mb-3">
+      <!-- <div class="mb-3">
         <label for="valorOriginal" class="form-label">Valor Original</label>
         <input type="number" class="form-control" id="valorOriginal" name="valor_original" [(ngModel)]="titles.valor_original" required>
       </div>
@@ -61,7 +61,7 @@
           <label for="multa" class="form-label">Multa (%)</label>
           <input type="number" class="form-control" id="multa" name="multa_percentual" [(ngModel)]="titles.multa_percentual" step="0.01">
         </div>
-      </div>
+      </div> -->
   
       <button type="button" class="btn btn-primary" (click)="create()">Criar</button>
     </form>
