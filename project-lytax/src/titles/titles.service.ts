@@ -13,4 +13,9 @@ export class TitlesService {
   async getAll():Promise<Titles[]>{
     return this.titlesModel.find().exec();
   }
+
+  async create(titles:Titles){
+    const newTitle = new this.titlesModel(titles)
+    return newTitle.save();
+  }
 }
