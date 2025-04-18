@@ -72,6 +72,30 @@ As variaveis serão utilizadas para o uri: `mongodb+srv://${user}:${pass}@${clus
 
 ---
 
+# Configuração do JWT
+No arquivo .env na raiz project-lytax (NestJS) adicione o seguinte conteúdo: <br><br>
+
+JWT_SECRET= <br>
+JWT_EXPIRE= <br><br>
+
+As variaveis serão utilizadas para o:<br><br>
+
+({<br>
+  secret: configService.get<string>('JWT_SECRET'),<br>
+  expire: configService.get<string>('JWT_EXPIRE'),<br>
+})<br>
+<br>
+---
+
+# Configuração da API Lytex
+No arquivo .env na raiz project-lytax (NestJS) adicione o seguinte conteúdo: <br><br>
+
+CLIENT_ID= <br>
+CLIENT_SECRET= <br><br>
+
+As variaveis serão utilizadas para a integração com a API
+---
+
 # Rodar o projeto
 ### Backend (NestJS)
 
