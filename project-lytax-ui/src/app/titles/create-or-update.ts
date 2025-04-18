@@ -1,5 +1,4 @@
-export interface Titles {
-    _id: string;
+export interface CreateOrUpdate {
     numero_titulo: string;
     nosso_numero: string;
     data_emissao: string;
@@ -10,7 +9,6 @@ export interface Titles {
     status: 'pendente' | 'pago' | 'vencido' | 'cancelado';
     forma_pagamento: 'boleto' | 'pix' | 'cartao';
     link_pagamento: string,
-  
     cedente: {
       nome: string;
       cnpj: string;
@@ -44,5 +42,4 @@ export interface Titles {
       data: string;
       alteracao: string;
     }[];
-  }
-  
+}

@@ -1,5 +1,7 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import { TitlesService } from './titles.service';
+import { Titles } from './schema/titles.schema';
+
 
 @Controller('titles')
 export class TitlesController {
@@ -11,7 +13,7 @@ export class TitlesController {
     }
 
     @Post()
-    async createTitles(@Body()){
-
+    async createTitles(@Body() titles:Titles){
+        return this.titlesService.create(titles);
     }
 }

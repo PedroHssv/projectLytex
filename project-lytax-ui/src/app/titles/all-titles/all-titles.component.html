@@ -6,23 +6,29 @@
                 <th scope="col">Título</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Tipo</th>
+                <th scope="col">Valor</th>
                 <th scope="col">Status</th>
                 <th scope="col">Ação</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let item of titles; let i = index">
-                <th scope="row">{{ i + 1 }}</th>
-                <td>{{item.nosso_numero}}</td>
-                <td>{{item.sacado.nome}}</td>
-                <td>Boleto</td>
-                <td>{{item.status}}</td>
-                <td>
-                    <a class="btn btn-warning" href="#" [attr.data-titulo]="item.numero_titulo" role="button">Pagamento</a>
-                </td>
+            <tr *ngIf="titles.length === 0">
+              <td colspan="7" class="text-center">Sem Dados</td>
             </tr>
-        </tbody>
+            <tr *ngFor="let item of titles; let i = index">
+              <th scope="row">{{ i + 1 }}</th>
+              <td>{{ item.nosso_numero }}</td>
+              <td>{{ item.sacado.nome }}</td>
+              <td>{{ item.forma_pagamento }}</td>
+              <td>{{ item.valor_original }}</td>
+              <td>{{ item.status }}</td>
+              <td>
+                <a class="btn btn-warning" [routerLink]="item.link_pagamento">Pagamento</a>
+              </td>
+            </tr>
+          </tbody>
+          
       </table>
 
-      <a class="btn btn-primary" href="#" role="button">Adicionar</a>
+      <a class="btn btn-primary" routerLink="/addTitle">Adicionar</a>
 </div>
